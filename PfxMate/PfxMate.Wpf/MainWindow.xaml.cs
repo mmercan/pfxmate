@@ -130,8 +130,10 @@ namespace PfxMate.Wpf
             var message = "Subject:\n" + cert.Subject + "\n\n";
             message += "Issuer:\n" + cert.Issuer + "\n\n";
             message += "Thumbprint:\n" + cert.Thumbprint + "\n\n";
-            message += "Serial Number:\n" + cert.SerialNumber;
+            message += "Serial Number:\n" + cert.SerialNumber + "\n\n";
+            message += "Expire Date:\n" + cert.NotAfter.ToShortDateString();
             RichTextBoxCertInfo.Document.Blocks.Clear();
+
             RichTextBoxCertInfo.Document.Blocks.Add(new Paragraph(new Run(message)));
         }
 
