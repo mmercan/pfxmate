@@ -117,4 +117,5 @@ jobs:
         title: "Development Build"
         files: |
           LICENSE.txt
+          **/*.msi
           ${{ env.Wap_Project_Directory }}bin\Release\*.msi
