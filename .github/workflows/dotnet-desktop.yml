@@ -116,6 +116,5 @@ jobs:
         prerelease: true
         title: "Development Build"
         files: |
-          LICENSE.txt
+          LICENSE.md
           **/*.msi
-          ${{ env.Wap_Project_Directory }}bin\Release\*.msi
